@@ -1,0 +1,53 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+section{
+	overflow: hidden;
+	width: 100%;
+}
+section article{
+margin: 0 auto;
+overflow: hidden;
+width: 80%;
+}
+header nav .logo{
+	width: 180px;
+}
+header nav .logo, h1{
+	display: inline-block;
+}
+header nav {
+	align-items: center;
+	display: flex;
+	padding: 1em 0
+}
+nav ul{
+	list-style: none;
+	padding:  5px;
+}
+nav ul li{
+	float: right;
+	background-color: red;
+}
+
+section article .contenedor1 .bloques {
+	display: flex;
+	align-items: top;
+	position: absolute;
+	padding: 0 0 3em 0;
+}
+section article .contenedor2 .bloques2 {
+	display: flex;
+	align-items: top;
+	position: absolute;
+	padding: 0 0 3em 0;
+}
+.bloque1, .bloque2, .bloque3, {
+	background-color: #f2f2f2;
+	border-radius: 12px;
+	display: inline-block;
+	margin: 0 25px 0 0;
+	overflow: hidden;
+	width: 23%;
+}
