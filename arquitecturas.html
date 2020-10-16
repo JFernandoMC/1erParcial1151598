@@ -7,6 +7,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
 	<title>Arquitecturas WEB</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -19,15 +20,20 @@
 </header>
 <nav class="menu">
 	<ul>
-		<li><a href="index.html">INICIO</a></li>
+		<li><a href="arquitecturas.html">INICIO</a></li>
 		<li><a href="arquitecturas.html">ARQUITECTURAS</a></li>
 		<li><a href="tecnologias.html">TECNOLOGIAS</a></li>
-		<li><a href="contacto.html">CONTACTANOS</a></li>
+		<li><a href="#">CONTACTANOS</a></li>
 	</ul>
 </nav>
 <section>
 	<article>
 		<div class="contenedor1">
+			<div class="menuEjercicios">
+				<input class="btn btn-outline-primary" type="submit" value="1" onclick="mostrar()">
+				<input class="btn btn-outline-primary" type="submit" value="2" onclick="ocultar()">
+				<input class="btn btn-outline-primary" type="submit" value="3" onclick="mostrar_ocultar()">
+			</div>
 			<div class="bloques" id="bloqueAjax">
 				<div class="bloque1" id="uno">
 					<img class="fotoBloqueEstilo" src="https://www.arquitecturajava.com/wp-content/uploads/ArquitecturasWebSpagetti.png">
@@ -71,10 +77,8 @@
 					</p>
 				</div>
 			</div>
-		</div>
-			<div class="contenedor2">
 			<div class="bloques2" id="bloqueAjax2">
-				<div class="bloque4" id="uno">
+				<div class="bloque1" id="uno">
 					<img class="fotoBloqueEstilo" src="https://www.arquitecturajava.com/wp-content/uploads/ArquitecturasWebModeloMVC2-1.png">
 					<h2>El Modelo FrontController/Enrutador</h2>
 					<p class="txtBloque">
@@ -88,7 +92,7 @@
 						servidor o Spring MVC.					
 					</p>			
 				</div>
-				<div class="bloque5">
+				<div class="bloque2">
 					<img class="fotoBloqueEstilo" src="https://www.arquitecturajava.com/wp-content/uploads/ArquitecturasWebAjax-1.png">
 					<h2>Arquitecturas Web y Ajax</h2>
 					<p class="txtBloque">
@@ -100,7 +104,7 @@
 						de programar.
 					</p>
 				</div>
-				<div class="bloque6">
+				<div class="bloque3">
 					<img class="fotoBloqueEstilo" src="https://www.arquitecturajava.com/wp-content/uploads/ArquitecturasWebSPASimple.png">
 					<h2>Arquitecturas Web y SPA</h2>
 					<p class="txtBloque">
@@ -112,10 +116,8 @@
 					</p>
 				</div>
 			</div>
-			</div>
-			<div class="contenedor3">
 			<div class="bloques3" id="bloqueAjax3">
-				<div class="bloque7" id="uno">
+				<div class="bloque1" id="uno">
 					<img class="fotoBloqueEstilo" src="https://www.arquitecturajava.com/wp-content/uploads/ArquitecturasWebSPA2.png">
 					<h2>Arquitecturas SPA MVC</h2>
 					<p class="txtBloque">
@@ -126,7 +128,7 @@
 						responsabilidades de la misma forma que en el servidor.					
 					</p>			
 				</div>
-				<div class="bloque8">
+				<div class="bloque2">
 					<img class="fotoBloqueEstilo" src="https://www.arquitecturajava.com/wp-content/uploads/ArquitecturasWebSPAComponentes-2.png">
 					<h2>SPA MVC y uso de componentes</h2>
 					<p class="txtBloque">
@@ -138,7 +140,7 @@
 						últimos.
 					</p>
 				</div>
-				<div class="bloque9">
+				<div class="bloque3">
 					<img class="fotoBloqueEstilo" src="https://www.arquitecturajava.com/wp-content/uploads/ArquitecturasWebIsomorfica.png">
 					<h2>Arquitecturas Web Isomórficas</h2>
 					<p class="txtBloque">
@@ -156,5 +158,23 @@
 		</div>
 	</article>
 </section>
+<script type="text/javascript">
+	function mostrar() {
+		document.getElementById("bloqueAjax").style.display = "flex";
+		document.getElementById("bloqueAjax2").style.display = "none";
+		document.getElementById("bloqueAjax3").style.display = "none";
+
+	}
+	function ocultar() {
+		document.getElementById("bloqueAjax").style.display = "none";
+		document.getElementById("bloqueAjax2").style.display = "flex";
+		document.getElementById("bloqueAjax3").style.display = "none";
+	}
+	function mostrar_ocultar() {
+		document.getElementById("bloqueAjax").style.display = "none";
+		document.getElementById("bloqueAjax2").style.display = "none";
+		document.getElementById("bloqueAjax3").style.display = "flex";
+	}
+</script>
 </body>
 </html>

@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<meta charset="utf-8">
 	<title>Arquitecturas WEB</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -13,18 +20,17 @@
 </header>
 <nav class="menu">
 	<ul>
-		<li><a href="index.html">INICIO</a></li>
+		<li><a href="arquitecturas.html">INICIO</a></li>
 		<li><a href="arquitecturas.html">ARQUITECTURAS</a></li>
 		<li><a href="tecnologias.html">TECNOLOGIAS</a></li>
-		<li><a href="contacto.html">CONTACTANOS</a></li>
+		<li><a href="#">CONTACTANOS</a></li>
 	</ul>
 </nav>
 <section class="padre">
 	<article class="hijo">
+		<h2 class="titulo">Tecnologias</h2>
 		<div class="container-informacion">
 			<div class="texto">
-				<h2 class="titulo">Tecnologias</h2>
-				<h3>BACKEND</h3>
 					<p class="cuerpo">Backend es la capa de acceso a datos de un software o cualquier
 					dispositivo, que no es directamente accesible por los usuarios,
 					además contiene la lógica de la aplicación que maneja dichos datos.
@@ -39,16 +45,18 @@
 			</div>
 		</div>
 		<figure class="container-img">
-			<img src="https://jucaripo.com/wp-content/uploads/2018/08/mejores-lenguajes-de-programacion-2018-1080x675.jpg">
+			<h3>BACKEND</h3>
+			<img class="fotoBloqueEstilo" src="https://jucaripo.com/wp-content/uploads/2018/08/mejores-lenguajes-de-programacion-2018-1080x675.jpg">
 		</figure>	
 	</article>
+</section>
+	<section class="padre">
 	<article class="hijo">
-		<div class="container-informacion">
-			<h2 class="titulo">Tecnologias</h2>
-			<h3>FRONTEND</h3>
 			<figure class="container-img">
-			<img src="https://gointeraction.biz/wp-content/uploads/2015/07/logosLenguajes.png">
-		</figure>
+			<h3>FRONTEND</h3>
+			<img class="fotoBloqueEstilo" src="https://gointeraction.biz/wp-content/uploads/2015/07/logosLenguajes.png">
+			</figure>
+			<div class="container-informacion">			
 			<div class="texto">
 					<p class="cuerpo">Frontend es la parte de un sitio web que interactúa con los usuarios, por eso
 					decimos que está del lado del cliente. Backend es la parte que se conecta con
@@ -67,10 +75,9 @@
 					de usuarios. React, Redux, Angular, Bootstrap, Foundation, LESS, Sass, Stylus y
 					PostCSS son algunos de ellos.</p>
 			</div>
-		</div>
-			
+		</div>		
 	</article>
-</section>
+	</section>
 <footer>
 	
 </footer>
