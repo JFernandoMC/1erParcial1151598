@@ -1,4 +1,5 @@
-*{
+*
+{
 	margin: 0;
 	padding: 0;
 }
@@ -34,14 +35,14 @@ nav ul li{
 section article .contenedor1 .bloques {
 	display: flex;
 	align-items: top;
+	z-index: 1;
 	position: absolute;
-	padding: 0 0 3em 0;
+	padding: 0 0 4em 0;
 }
-section article .contenedor2 .bloques2 {
+section article .contenedor1 .bloques2 {
 	display: flex;
 	align-items: top;
-	position: absolute;
-	padding: 0 0 3em 0;
+	padding: 0 0 4em 0;
 }
 .bloque1, .bloque2, .bloque3, {
 	background-color: #f2f2f2;
@@ -50,4 +51,112 @@ section article .contenedor2 .bloques2 {
 	margin: 0 25px 0 0;
 	overflow: hidden;
 	width: 23%;
+}
+.bloque3{
+	margin: 0;
+}
+section article .contenedor2 .bloques2 {
+	display: flex;
+	align-items: top;
+	position: absolute;
+	padding: 0 0 4em 0;
+}
+
+.bloque4, .bloque5, .bloque6, {
+	background-color: #f2f2f2;
+	border-radius: 12px;
+	margin: 0 25px 0 0;
+	overflow: hidden;
+	width: 20%;
+}
+section article .contenedor3 .bloques3 {
+	display: flex;
+	align-items: top;
+	position: absolute;
+	padding: 0 0 4em 0;
+}
+
+.bloque7, .bloque8, .bloque9, {
+	background-color: #f2f2f2;
+	border-radius: 12px;
+	margin: 0 25px 0 0;
+	overflow: hidden;
+	width: 20%;
+}
+.fotoBloqueEstilo {
+	width: 100%;
+}
+.txtBloque {
+	overflow: hidden;
+	padding: 1em;
+	line-height: 16px;
+}
+#bloqueAjax2{
+	position: absolute;
+  	z-index: 0;
+}
+#bloqueAjax3{
+	position: absolute;
+  	z-index: 0;
+}
+@media only screen and (max-width: 880px) {
+
+  	section article .contenedor1 .bloques .bloque1 {
+  		width: 100%;
+  		display: block;
+  		margin: 0;
+  	}
+
+  	.bloque2, .bloque3, {
+  		width: 100%;
+  		display: block;
+  		margin: 0;
+  		margin: 0 0 2em 0;
+  	}
+
+  	#bloqueAjax{
+  		display: block;
+  	}
+
+
+  	#uno {
+  		display: block;
+  		width: 100%;
+  		margin: 0 0 2em 0;
+  	}
+}
+.container-img
+{
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+section article div .container-informacion
+{
+		width: 50%;
+		height: auto;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+
+}
+section .padre
+{
+		width: 100%;
+		padding: 4em 0;
+
+}
+section article .hijo
+{
+		width: 90%;
+		margin: 0 auto;
+		display: flex;
+}
+section article .texto
+{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 0 auto;
+		height: 200px;
 }
